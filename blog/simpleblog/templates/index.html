@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+    {% block content %}
+        {% for post in blog_list %}
+            <div>
+            <h2><p>{{ post.title }}&nbsp;&nbsp;&nbsp;{{ post.timestamp }}</p></h2>
+            <p>{{ post.body }}</p>
+            </div>
+        {% endfor %}
+    {% endblock %}
